@@ -1,16 +1,21 @@
 .pageOne {
-  .textOverlayTop {
-    color: #2e579e;
-    padding: 30px 60px;
-    h1 {
-      font-size: 42px;
-    }
+  .modal {
+    background-color: "transparent";
+    box-shadow: "none";
+    display: "flex";
+    overflow: "none";
+    width: "100%";
+    padding: "0";
+    margin: "0";
+    height: "100%";
+    min-width: "100%";
+    justify-content: "center"
   }
-  .textOverlayBottom {
-    color: #2e579e;
-    padding: 30px 60px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  .overlay {
+    background-color: "#1cccc";
+    padding: 0
+  }
+  .closeIcon {
+    fill: "#fff"
   }
 }

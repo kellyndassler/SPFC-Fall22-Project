@@ -1,3 +1,92 @@
 .home {
-  padding: 40px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* Style the overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  text-align: left;
+  margin-top: 30px;
+  align-items: center;
+  margin-right: 50px;
+  text-align: justify;
+  margin-left: 50px;
+}
+
+/* Style the open button */
+.open-button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: #C7EA46;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.open-button:hover {
+  background: #0b7dda;
+}
+
+/* Style the "Close" button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+.destroy-button {
+  margin-top: 50px;
+  padding: 10px 30px;
+  background: #2C041C;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.destroy-button:hover {
+  background: #4C0121;
+}
+
+.destroy-slowly-button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: #4C0121;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.destroy-slowly-button:hover {
+  background: #2C041C;
+}
+
+.search-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.link {
+  color: #2196f3;
 }

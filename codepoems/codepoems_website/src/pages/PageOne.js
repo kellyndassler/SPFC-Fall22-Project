@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import ResponsiveModal from "react-responsive-modal";
 import "./PageOne.scss";
 
 const PageOne = () => {
@@ -8,11 +9,17 @@ const PageOne = () => {
   useEffect(() => {}, []);
 
   return (
-    <div className="pageOne">
-      <div className="textOverlayTop">
-        <h1 className="title">Personal Website</h1>
-      </div>
-    </div>
+    <ResponsiveModal
+      open={modalVisible}
+      onClose={() => setModalVisible(false)}
+      styles={styles}
+      animationDuration={1000}
+      focusTrapped={true}
+      closeIconSize={40}
+      showCloseIcon={true}
+    >
+      <ExtraInfo>Click ESC or click outside input.</ExtraInfo>
+    </ResponsiveModal>
   );
 }
 
